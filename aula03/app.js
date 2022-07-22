@@ -22,7 +22,7 @@ app.get("/", (_req, res) => {
 });
 
 app.post("/", (req, res) => {
-  if(req.body.length > 4) {
+  if(req.body.length === 4) {
     return res.status(400).json({ message: "need at least 4 products" })
   }
 
